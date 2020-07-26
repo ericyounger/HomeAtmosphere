@@ -10,7 +10,7 @@ class Atmosphere(rumps.App):
             temperature = result["temperature"]
             humidity = result["humidity"]
             print("loop")
-            self.title = "Temperature : {}, Humidity : {}".format(temperature, humidity)
+            self.title = "T: {}°C, H : {}%".format(temperature, humidity)
         except: 
             self.title = "Not connected"
 
